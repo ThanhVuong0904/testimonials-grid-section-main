@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  font-size: 13px;
+}
+
+.container {
+  max-width: 1140px;
+  padding: 60px 15px 90px;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 825px 255px;
+      grid-template-columns: 825px 255px;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.grid-left {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .grid-left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.grid-left-top {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 540px 255px;
+      grid-template-columns: 540px 255px;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .grid-left-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.grid-left-bottom {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 255px 540px;
+      grid-template-columns: 255px 540px;
+  grid-gap: 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .grid-left-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.grid-right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.grid-avatar {
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2px;
+  overflow: hidden;
+  background-color: white;
+  margin-right: 20px;
+}
+
+.grid-avatar img {
+  border-radius: 100%;
+}
+
+.grid-desc {
+  color: #cfcfcf;
+  font-weight: 500;
+}
+
+.grid-name {
+  color: #cfcfcf;
+  font-weight: 600;
+}
+
+.grid-graduate {
+  color: #cfcfcf;
+  opacity: 0.5;
+}
+
+.grid-title {
+  margin: 20px 0;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.grid-item {
+  padding: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.grid-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.violet {
+  background-color: #7541c8;
+  position: relative;
+  z-index: 1;
+}
+
+.violet .bg {
+  position: absolute;
+  right: 50px;
+  top: 0;
+  z-index: -1;
+}
+
+.blackish-blue {
+  background-color: #19212e;
+}
+
+.grayish-blue {
+  background-color: #48556a;
+}
+
+.white {
+  background-color: white;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  height: 100%;
+}
+
+.white .grid-title, .white .grid-name, .white .grid-graduate, .white .grid-desc {
+  color: #48556a;
+}
+
+.white .grid-desc {
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
